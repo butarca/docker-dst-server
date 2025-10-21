@@ -1,3 +1,8 @@
+## Fork changes
+
+*Changed the image from "debian:buster-slim" to "debian:bullseye-slim" due to the relocation of the reposetory
+*Fixed missing file write permissions (0x6) in "/opt/stemcmd_scripts"
+
 # Don't Starve Together Dedicated Server Docker Image
 
 They write their server setup instructions like sh*t, so we made this Docker image to simplify things.
