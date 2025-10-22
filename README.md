@@ -2,7 +2,7 @@
 
 * Changed the image to `debian:bullseye-slim` due to `debian:buster-slim` being archived.
 * Fixed missing file write permissions (0x6) in `/opt/stemcmd_scripts`.
-* To use this image in docker or docker compose use `butarca/docker-dst-server:latest`.
+* To use this image in docker or docker compose use `butarca/dst-server:latest`.
 
 # Don't Starve Together Dedicated Server Docker Image
 
