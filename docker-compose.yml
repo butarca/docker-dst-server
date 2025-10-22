@@ -1,7 +1,7 @@
 version: '3.5'
 services:
   dst-server:
-     image: butarca/docker-dst-server:latest
+     image: butarca/dst-server:latest
      environment:
         - DST_CLUSTER_TOKEN="put your token here"
      restart: "on-failure:5"
