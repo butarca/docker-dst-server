@@ -42,7 +42,7 @@ if [ "$1" == "dontstarve_dedicated_server_nullrenderer" ] || [ "$1" == "supervis
 
     # fix config file permission
     chown -R "${DST_USER}:${DST_GROUP}" "${DST_USER_DATA_PATH}"
-	chown -R "${DST_USER}:${DST_GROUP}" /opt/steamcmd_scripts
+    #chown -R "${DST_USER}:${DST_GROUP}" /opt/steamcmd_scripts
 
     # protect our mods dir
     # if the mods dir is already a symlink, then we temporary remove it to protect it, so that it survives a container restart
