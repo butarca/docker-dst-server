@@ -1,0 +1,13 @@
+#version: '3.5'
+services:
+  dst-server:
+     image: butarca/dst-server:latest
+     environment:
+        - DST_CLUSTER_TOKEN=<cluster_token>
+     restart: "on-failure:5"
+     ports:
+        - "10999-11000:10999-11000/udp"
+        - "12346-12347:12346-12347/udp"
+     volumes:
+        - ~/.klei/DoNotStarveTogether:/data
+     stop_grace_period: 6m
